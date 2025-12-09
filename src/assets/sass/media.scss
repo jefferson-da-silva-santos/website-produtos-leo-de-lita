@@ -1,0 +1,572 @@
+/*===================(MEDIA QUERYS)=====================*/
+
+@include media-query(1195px) {
+  .group-missao__missao .card-missao--quartiary .img {
+    position: absolute;
+    width: 100px;
+  }
+
+  .group-missao__missao .card-missao--quartiary .img:nth-child(4),
+  .group-missao__missao .card-missao--quartiary .img:nth-child(5) {
+    width: 100px;
+  }
+}
+
+@include media-query(1117px) {
+  .group-missao__missao .card-missao--primary__text,
+  .group-missao__missao .card-missao--secondary__text,
+  .group-missao__missao .card-missao--tertiary__list .item {
+    font-size: 1rem;
+  }
+}
+
+@include media-query(980px) {
+  .group-missao {
+    min-height: 73rem;
+    max-width: none;
+  }
+
+  .group-missao__missao .card-missao--primary__text {
+    max-width: none;
+  }
+
+  .group-missao__missao .card-missao--quartiary {
+    height: 20rem;
+    border-right: none;
+    @include flexbox(flex, column, center, center, 1em);
+  }
+
+  .group-missao__missao .card-missao--tertiary {
+    text-align: center;
+    border-right: none;
+
+    &__list {
+      @include flexbox(flex, column, center, center, 0.5em);
+      list-style: none;
+    }
+  }
+
+  .group-missao__missao .card-missao--primary,
+  .group-missao__missao .card-missao--secondary {
+    border-right: none;
+  }
+  .group-missao__missao .card-missao .animedImg3 {
+    top: 38%;
+  }
+
+  .group-missao__missao .card-missao .animedImg4 {
+    left: 96%;
+    bottom: 24%;
+  }
+
+  .group-missao__missao .card-missao--quartiary .img:nth-child(1) {
+    left: 42%;
+    top: 38px;
+  }
+
+  .group-missao__missao .card-missao--quartiary .img:nth-child(2) {
+    left: 34%;
+    top: 27px;
+  }
+
+  .group-missao__missao .card-missao--quartiary .img:nth-child(3) {
+    left: 30%;
+    top: 100px;
+  }
+
+  .group-missao__missao .card-missao--quartiary .img:nth-child(4) {
+    left: 46%;
+    top: 108px;
+  }
+
+  .group-missao__missao .card-missao--quartiary .img:nth-child(5) {
+    left: 38%;
+    top: 147px;
+  }
+
+  .group-missao__missao .card-missao {
+    display: flex;
+    max-width: 32rem;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  /*=============(HEADER)===============*/
+  .group-header {
+    height: 60em;
+    min-height: 60em;
+  }
+  .group-header__header {
+    @include grid-layout(grid, 1fr, 1fr, 0, 0);
+  }
+  .group-header__header__header-secundary {
+    margin-top: 7em;
+  }
+  .group-header__header__header-primary video {
+    width: 100%;
+    max-width: 255px;
+    height: 100%;
+  }
+  .group-encontre-nos__animated-1,
+  .group-header__color-animated-2,
+  .group-header__color-animated-3,
+  .group-encontre-nos__animated-2,
+  .group-header__color-animated-2,
+  .group-encontre-nos__animated-3,
+  .group-header__color-animated-3,
+  .group-encontre-nos__animated-1,
+  .group-header__color-animated-1 {
+    height: 60em;
+    min-height: 60em;
+  }
+  .group-header__header__header-secundary {
+    grid-row: 1 / -1;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+
+    &__title {
+      font-size: 2.2em;
+    }
+
+    &__text {
+      font-size: 1em;
+      margin-top: 0.5em;
+    }
+
+    &__btn {
+      font-size: 1em;
+    }
+  }
+
+  /*=============(SOBRE)================*/
+  .group-sobre-nos__sobre-nos {
+    @include grid-layout(grid, 1fr, 1fr, 0, 0);
+
+    &__group-primary {
+      padding: 0;
+      align-items: center;
+      text-align: center;
+
+      &__suptitle {
+        font-size: 1em;
+      }
+
+      &__title {
+        font-size: 2em;
+      }
+
+      &__text {
+        margin-top: 1em;
+        font-size: 1em;
+        max-width: 80%;
+      }
+    }
+
+    &__group-secundary {
+      height: 24em;
+
+      img {
+        max-width: 23em;
+      }
+    }
+  }
+
+  /*============(SERVIÇOS)===============*/
+  .group-servicos__servicos__group-primary {
+    &__suptitle {
+      font-size: 0.9em;
+    }
+
+    &__title {
+      font-size: 2em;
+      max-width: 98%;
+    }
+  }
+
+  .group-servicos__servicos__group-secundary {
+    padding: 6em 4em 3em 4em;
+    @include grid-layout(grid, 1fr 1fr, 1fr 1fr 1fr, 2em, 6.5em);
+
+    &__card {
+      max-width: 100%;
+
+      h3 {
+        font-size: 1.05em;
+        line-height: 120%;
+        text-align: center;
+      }
+
+      a {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      .circle-externo {
+        width: 6em;
+        height: 6em;
+
+        .circle-interno {
+          width: 5.3em;
+          height: 5.3em;
+
+          i {
+            font-size: 2.8em;
+          }
+        }
+      }
+    }
+  }
+
+  /*==============(ENCONTRENOS)==========*/
+  .group-encontre-nos {
+    min-height: 53em;
+  }
+
+  .group-encontre-nos__econtre-nos {
+    @include grid-layout(grid, 1fr, 1fr 2fr, 0, 0);
+
+    &__group-primary {
+      align-items: center;
+      text-align: center;
+      justify-content: flex-start;
+
+      &__title {
+        font-size: 2em;
+        max-width: 80%;
+      }
+
+      &__text {
+        max-width: 28em;
+        font-size: 1em;
+      }
+    }
+
+    &__group-secundary {
+      justify-content: center;
+    }
+  }
+
+  /*==============(CONTATO)==========*/
+
+  .group-contato__contato {
+    padding: 3em 4em;
+    @include grid-layout(grid, 1fr, 1fr 1fr, 0, 1em);
+
+    .group-contato__contato__group-primary {
+      text-align: center;
+      &__suptitle {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      &__title {
+        font-size: 2em;
+        text-align: center;
+        margin: auto;
+      }
+    }
+
+    .group-contato__contato__group-secundary {
+      img {
+        max-width: 16em;
+      }
+    }
+  }
+
+  .group-contato__contato__group-secundary .group-social a {
+    width: 2.5em;
+    height: 2.5em;
+
+    i {
+      font-size: 1em;
+    }
+  }
+}
+
+@include media-query(884px) {
+  /*===================(NAV)=====================*/
+  .group-nav__nav__list {
+    position: absolute;
+    border: 1px solid #002092;
+    background-color: #000759;
+    @include flexbox(none, column, center, center, 1em);
+    right: 0;
+    top: 0;
+    padding: 4em 2em 2em 2em;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: menuCaindo 0.5s ease 0s 1 normal forwards;
+    a {
+      font-size: 1.2em;
+    }
+  }
+  .group-nav__nav__img-menu {
+    display: block;
+    margin-right: 1em;
+  }
+}
+
+@include media-query(780px) {
+  .group-option .option {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+  }
+
+  .group-option .option__section--primary {
+    border-right: 12px solid $color-3;
+    padding: 2em 2em 1em 2em;
+  }
+
+  .group-option .option__section--secundary {
+    grid-row: 2 / -2;
+    border-left: 12px solid $color-3;
+    @include flexbox(flex, row, center, center, 0);
+
+    &__img-1 {
+      max-width: 5em;
+    }
+
+    &__img-2 {
+      max-width: 7em;
+    }
+  }
+
+  .option__section--primary__group-description__text {
+    @include flexbox(flex, column, center, center, 0);
+  }
+}
+
+@include media-query(700px) {
+  /*===================(SERVIÇOS)=====================*/
+  .group-servicos__servicos__group-secundary {
+    padding: 5em 1em 3em 1em;
+  }
+}
+
+@include media-query(600px) {
+  .group-encontre-nos__econtre-nos__group-secundary .avancar,
+  .group-encontre-nos__econtre-nos__group-secundary .voltar {
+    display: none;
+  }
+
+  .group-encontre-nos__econtre-nos__group-secundary {
+    flex-direction: column;
+    gap: 1.5em;
+    .group-btns {
+      @include flexbox(flex, row, center, center, 1em);
+      &__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        border: none;
+        width: 2em;
+        color: white;
+        font-size: 1.2em;
+        height: 2em;
+        background-image: linear-gradient(to right, #cf9b01, #cf9b01, #faec7a);
+        border-radius: 10px 10px 10px 10px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .group-encontre-nos__econtre-nos {
+    grid-template-rows: 1fr 3fr;
+    row-gap: 2em;
+  }
+}
+
+@include media-query(490px) {
+  /*===================(SERVIÇOS)=====================*/
+  .group-servicos__servicos__group-secundary {
+    @include grid-layout(grid, 1fr, repeat(1fr, 6), 0, 6.6.5em);
+  }
+
+  .group-header__header__header-primary img {
+    visibility: hidden;
+  }
+}
+
+@include media-query(477px) {
+  .group-encontre-nos__econtre-nos {
+    grid-template-rows: 1fr 2fr;
+    row-gap: 2em;
+  }
+}
+
+@include media-query(450px) {
+  /*===================(HEADER)=====================*/
+  .group-header__header__header-secundary {
+    &__title {
+      font-size: 2em;
+    }
+
+    &__text {
+      font-size: 0.95em;
+      max-width: 80%;
+    }
+
+    &__btn {
+      font-size: 0.95em;
+    }
+  }
+
+  /*===================(SOBRE-NOS)=====================*/
+  .group-sobre-nos__sobre-nos {
+    &__group-primary {
+      &__suptitle {
+        font-size: 0.8em;
+      }
+
+      &__title {
+        font-size: 1.7em;
+      }
+
+      &__text {
+        font-size: 0.98em;
+      }
+    }
+  }
+
+  .group-sobre-nos__sobre-nos__group-secundary img {
+    max-width: 20em;
+  }
+  /*===================(SERVICOS)=====================*/
+  .group-servicos__servicos__group-primary {
+    &__suptitle {
+      font-size: 0.8em;
+    }
+
+    &__title {
+      font-size: 1.7em;
+      max-width: 85%;
+    }
+  }
+
+  /*===================(ENCONTRE-NOS)=====================*/
+  .group-encontre-nos__econtre-nos {
+    &__group-primary {
+      align-items: center;
+      text-align: center;
+
+      &__title {
+        font-size: 1.7em;
+        max-width: 70%;
+      }
+
+      &__text {
+        max-width: 80%;
+        font-size: 0.95em;
+      }
+    }
+  }
+
+  /*===================(CONTATO)=====================*/
+  .group-contato__contato {
+    padding: 3em 1em;
+    .group-contato__contato__group-primary {
+      &__suptitle {
+        font-size: 0.8em;
+      }
+
+      &__title {
+        font-size: 1.7em;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@include media-query(447px) {
+  .group-missao {
+    min-height: 79rem;
+  }
+}
+
+@include media-query(437px) {
+  .group-sobre-nos__sobre-nos__group-secundary {
+    height: 20em;
+  }
+}
+
+@include media-query(428px) {
+  .group-option .option__section--primary {
+    padding: 3em 1em 1em 1em;
+  }
+}
+
+@include media-query(400px) {
+  .group-option .option__section--primary__title {
+    font-size: 1.7em;
+  }
+
+  .group-option .option__section--primary {
+    gap: 1em;
+  }
+
+  .group-option .option__section--primary__group-description {
+    grid-template-columns: 3em 1fr;
+    &__img {
+      width: 40px;
+    }
+  }
+}
+
+@include media-query(397px) {
+  .group-missao {
+    min-height: 80rem;
+  }
+}
+
+@include media-query(380px) {
+  .group-option .option__section--primary__title {
+    font-size: 1.5em;
+  }
+
+  .group-encontre-nos__econtre-nos {
+    grid-template-rows: 1fr 0fr;
+  }
+}
+
+@include media-query(357px) {
+  .group-sobre-nos__sobre-nos__group-secundary {
+    height: 19em;
+  }
+}
+
+@include media-query(344px) {
+  .group-option .option {
+    height: 30em;
+  }
+
+  .option__section--primary__group-description__text {
+    font-size: 0.86em;
+  }
+  .group-option .option__section--primary__title {
+    font-size: 1.4em;
+  }
+
+  .group-option .option__section--primary {
+    padding: 3em 1em 0em 1em;
+  }
+
+  .group-option .option__section--secundary__img-1 {
+    max-width: 3.5em;
+  }
+
+  .group-option .option__section--secundary__img-2 {
+    max-width: 5.5em;
+  }
+}
+
+@include media-query(335px) {
+  .group-missao {
+    min-height: 90rem;
+  }
+}

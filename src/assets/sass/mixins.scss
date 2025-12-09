@@ -1,0 +1,146 @@
+@mixin flexbox($flex, $direction, $justify, $align, $gap) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin media-query($tamanho) {
+  @media (max-width: $tamanho) {
+    @content;
+  }
+}
+
+@mixin grid-layout(
+  $grid,
+  $columns-number,
+  $rows-number,
+  $column-gap-value,
+  $row-gap-value
+) {
+  display: $grid;
+  grid-template-columns: $columns-number;
+  grid-template-rows: $rows-number;
+  column-gap: $column-gap-value;
+  row-gap: $row-gap-value;
+}
+
+
+
+%suptitle {
+  font-family: $font-text;
+  text-transform: uppercase;
+  font-size: $font-text;
+  font-weight: bolder;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+%title {
+  line-height: 110%;
+  font-size: 3em;
+  text-transform: initial;
+  font-weight: 600;
+  max-width: 10em;
+  font-family: $font-title;
+}
+
+%text {
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 150%;
+  font-family: $font-text;
+}
+
+%animated-1 {
+  position: absolute;
+  width: 100%;
+  min-height: $min-heigth;
+  animation: a1 10s linear infinite;
+  background: radial-gradient(
+      20.54% 17.4% at 57.95% 71.96%,
+      rgba(109, 119, 64, 0.5) 0%,
+      rgba(148, 95, 176, 0) 100%
+    ),
+    radial-gradient(
+      22.68% 18.42% at 32.04% 27.47%,
+      rgba(116, 128, 67, 0.5) 0%,
+      rgba(224, 209, 232, 0) 100%
+    ),
+    radial-gradient(
+      67.88% 68.06% at 115.03% 28.58%,
+      rgba(160, 179, 76, 0.39) 0%,
+      rgba(243, 243, 120, 0.363) 0%,
+      rgba(146, 30, 207, 0) 66.83%
+    ),
+    radial-gradient(
+      80.22% 72.43% at -7.5% 102.67%,
+      rgba(180, 211, 41, 0.178) 0%,
+      rgba(255, 253, 128, 0) 78.32%,
+      rgba(255, 182, 252, 0) 100%
+    ),
+    #001b75;
+}
+
+%animated-2 {
+  position: absolute;
+  width: 100%;
+  min-height: $min-heigth;
+  animation: a2 10s linear infinite;
+  background: radial-gradient(
+      25.66% 36.19% at 44.55% 73.2%,
+      rgba(148, 95, 176, 0.2) 0%,
+      rgba(148, 95, 176, 0) 100%
+    ),
+    radial-gradient(
+      27.67% 26.56% at 70.9% 62.18%,
+      rgba(0, 4, 56, 0.2) 0%,
+      rgba(224, 209, 232, 0) 100%
+    ),
+    radial-gradient(
+      72.88% 73.98% at 115.76% 95.67%,
+      rgba(12, 0, 56, 0.226) 0%,
+      rgba(255, 210, 10, 0.164) 0%,
+      rgba(225, 225, 255, 0) 66.83%
+    ),
+    radial-gradient(
+      38.43% 39.98% at 1.94% 7.97%,
+      rgba(5, 0, 48, 0.3) 0%,
+      rgba(255, 230, 0, 0.137) 78.32%,
+      rgba(255, 182, 252, 0) 100%
+    ),
+    #001b75;
+  background-size: cover;
+}
+
+%animated-3 {
+  position: absolute;
+  width: 100%;
+  min-height: $min-heigth;
+  animation: a3 10s linear infinite;
+  background: radial-gradient(
+      20.35% 17.4% at 17.05% 61.76%,
+      rgba(180, 197, 84, 0.2) 0%,
+      rgba(148, 95, 176, 0) 100%
+    ),
+    radial-gradient(
+      28.37% 28.42% at 12.57% 93%,
+      rgba(171, 177, 96, 0.2) 0%,
+      rgba(224, 209, 232, 0) 100%
+    ),
+    radial-gradient(
+      47.81% 47.94% at 13.19% 38.67%,
+      rgba(202, 200, 58, 0.24) 0%,
+      rgba(85, 99, 63, 0.5) 0%,
+      rgba(169, 207, 30, 0) 66.83%
+    ),
+    radial-gradient(
+      62.55% 61.23% at 76.94% -12.06%,
+      rgba(255, 181, 252, 0.3) 0%,
+      rgba(255, 182, 252, 0) 78.32%,
+      rgba(255, 182, 252, 0) 100%
+    ),
+    #001b75;
+  background-size: cover;
+}

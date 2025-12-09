@@ -1,0 +1,177 @@
+@keyframes a1 {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes a2 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes a3 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fluterLogo {
+  0% {
+    transform: translateY(-10px) rotate(5deg) rotateY(20deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0) rotateY(0);
+  }
+  100% {
+    transform: translateY(-10px) rotate(-5deg) rotateY(-20deg);
+  }
+}
+
+@keyframes animacaoAnimedImg1 {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(32deg);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes animacaoAnimedImg3 {
+  0% {
+    transform: rotate(-32deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(-32deg);
+  }
+}
+
+@keyframes animacaoAnimedImg4 {
+  0% {
+    transform: rotate(34deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(34deg);
+  }
+}
+
+@keyframes animacaoBolachas1 {
+  0% {
+    transform: rotate(25deg);
+  }
+
+  50% {
+    transform: rotate(26deg);
+  }
+
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes animacaoBolachas2 {
+  0% {
+    transform: rotate(-27deg);
+  }
+
+  50% {
+    transform: rotate(-26deg);
+  }
+
+  100% {
+    transform: rotate(-27deg);
+  }
+}
+
+@keyframes animacaoBolachas4 {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(32deg);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes animacaoBolachas5 {
+  0% {
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: rotate(6deg);
+  }
+
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes imagemAdmin {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuCaindo {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
