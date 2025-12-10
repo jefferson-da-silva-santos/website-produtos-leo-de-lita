@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "boxicons/css/boxicons.min.css";
 import ModalProvider from "./providers/ModalProvider";
+import MenuProvider from "./providers/MenuProvider";
 
 function App() {
   useEffect(() => {
@@ -22,17 +23,19 @@ function App() {
   }, []);
   return (
     <ModalProvider>
-      <Modal />
-      <Navigation />
-      <Inicio />
-      <main>
-        <SobreNos />
-        <Produtos />
-        <MissaoVisaoValores />
-        <EncontreNos />
-        <Contato />
-      </main>
-      <Footer />
+      <MenuProvider>
+        <Modal />
+        <Navigation />
+        <Inicio />
+        <main>
+          <SobreNos />
+          <Produtos />
+          <MissaoVisaoValores />
+          <EncontreNos />
+          <Contato />
+        </main>
+        <Footer />
+      </MenuProvider>
     </ModalProvider>
   );
 }

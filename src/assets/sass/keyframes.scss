@@ -175,3 +175,21 @@
     opacity: 1;
   }
 }
+
+@keyframes openModal {
+  0% {
+    max-width: 0rem;
+  }
+  100% {
+    max-width: 48em;
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    max-width: 48em;
+  }
+  100% {
+    max-width: 0rem;
+  }
+}

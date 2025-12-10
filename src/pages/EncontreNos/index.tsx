@@ -5,7 +5,7 @@ const EncontreNos = () => {
         <div className="group-encontre-nos__animated-2"></div>
         <div className="group-encontre-nos__animated-3"></div>
         <section className="group-encontre-nos__econtre-nos">
-          <div className="group-encontre-nos__econtre-nos__group-primary">
+          <div className="group-encontre-nos__econtre-nos__group-primary" data-aos="fade-left">
             <h2 className="group-encontre-nos__econtre-nos__group-primary__title">
               Confira nossa <strong>Localização</strong>
             </h2>
@@ -16,7 +16,7 @@ const EncontreNos = () => {
               selecionados. Descubra sabores únicos que encantam a todos!
             </p>
           </div>
-          <div className="group-encontre-nos__econtre-nos__group-secundary">
+          <div className="group-encontre-nos__econtre-nos__group-secundary" data-aos="fade-left">
             <img
               src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/loja-fisica2.jpg"
               className="group-encontre-nos__econtre-nos__group-secundary__img"

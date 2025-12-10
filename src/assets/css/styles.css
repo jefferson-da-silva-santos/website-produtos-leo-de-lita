@@ -214,13 +214,36 @@
     opacity: 1;
   }
 }
+@keyframes openModal {
+  0% {
+    max-width: 0rem;
+  }
+  100% {
+    max-width: 48em;
+  }
+}
+@keyframes closeModal {
+  0% {
+    max-width: 48em;
+  }
+  100% {
+    max-width: 0rem;
+  }
+}
 .group-encontre-nos__econtre-nos__group-secundary .group-btns {
   display: none;
 }
 
 /*===================(OPTION)========================*/
+.open {
+  animation: openModal 0.5s ease 0s 1 normal forwards;
+}
+
+.close {
+  animation: closeModal 0.5s ease 0s 1 normal forwards;
+}
+
 .group-option {
-  visibility: hidden;
   position: fixed;
   z-index: 900000000;
   padding: 2em;
@@ -1012,6 +1035,22 @@
   color: #2a0fa1;
   font-weight: 400;
 }
+.group-contato__contato__group-primary__form button {
+  padding: 0.8em 0.8em 0.8em 0.4em;
+  border: 1px solid #d9d9d9;
+  background-color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.group-contato__contato__group-primary__form button:focus {
+  padding: 0.8em 0.8em 0.8em 0.8em;
+}
+.group-contato__contato__group-primary__form button::placeholder {
+  color: #2a0fa1;
+  font-weight: 400;
+}
 .group-contato__contato__group-primary__form textarea {
   height: 8em;
   border: 1px solid #d9d9d9;
@@ -1375,7 +1414,7 @@
     position: absolute;
     border: 1px solid #002092;
     background-color: #000759;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1384,8 +1423,6 @@
     top: 0;
     padding: 4em 2em 2em 2em;
     border-radius: 0 0 10px 10px;
-    transform: translateY(-100%);
-    opacity: 0;
     animation: menuCaindo 0.5s ease 0s 1 normal forwards;
   }
   .group-nav__nav__list a {

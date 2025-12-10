@@ -291,13 +291,11 @@
     position: absolute;
     border: 1px solid #002092;
     background-color: #000759;
-    @include flexbox(none, column, center, center, 1em);
+    @include flexbox(flex, column, center, center, 1em);
     right: 0;
     top: 0;
     padding: 4em 2em 2em 2em;
     border-radius: 0 0 10px 10px;
-    transform: translateY(-100%);
-    opacity: 0;
     animation: menuCaindo 0.5s ease 0s 1 normal forwards;
     a {
       font-size: 1.2em;

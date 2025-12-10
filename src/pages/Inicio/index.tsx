@@ -4,7 +4,7 @@ const Inicio = () => {
   return (
      <div className="group-header" id="inicio">
       <header className="group-header__header">
-        <div className="group-header__header__header-primary">
+        <div className="group-header__header__header-primary" data-aos="fade-right">
           <video
             poster="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo.webp"
             width="100%"
@@ -35,7 +35,7 @@ const Inicio = () => {
             className="img4"
           />
         </div>
-        <div className="group-header__header__header-secundary">
+        <div className="group-header__header__header-secundary"  data-aos="fade-left">
           <h1 className="group-header__header__header-secundary__title">
             Sabor e qualidade em cada <strong>mordida</strong>.
           </h1>

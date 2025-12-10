@@ -45,7 +45,7 @@ const MissaoVisaoValores: React.FC = () => {
   return (
     <div className="group-missao">
       <section className="group-missao__missao">
-        <div className="card-missao">
+        <div className="card-missao" data-aos="fade-up-left">
           {/* Card Missão */}
           <div className="card-missao--primary">
             <h3 className="card-missao--primary__title">{MVV_DATA.missao.titulo}</h3>

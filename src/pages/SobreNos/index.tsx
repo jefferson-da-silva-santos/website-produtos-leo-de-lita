@@ -2,7 +2,7 @@ const SobreNos = () => {
     return (
       <div className="group-sobre-nos" id="sobre-nos">
         <section className="group-sobre-nos__sobre-nos">
-          <div className="group-sobre-nos__sobre-nos__group-primary hide-2-1">
+          <div className="group-sobre-nos__sobre-nos__group-primary"  data-aos="fade-left">
             <div>
               <span className="group-sobre-nos__sobre-nos__group-primary__suptitle">
                 Sobre nós
@@ -22,7 +22,7 @@ const SobreNos = () => {
               excelência e sabor e felicidade.
             </p>
           </div>
-          <div className="group-sobre-nos__sobre-nos__group-secundary">
+          <div className="group-sobre-nos__sobre-nos__group-secundary"  data-aos="fade-left">
             <img
               className="img"
               src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/logo-media.webp"
