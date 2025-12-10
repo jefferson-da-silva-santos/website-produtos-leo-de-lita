@@ -1,6 +1,8 @@
 const EncontreNos = () => {
   return (
     <div className="group-encontre-nos" id="encontre-nos">
+      <img src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/decoration.webp" alt="" className="docoration_1" />
+      <img src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/decoration.webp" alt="" className="docoration_2" />
         <div className="group-encontre-nos__animated-1"></div>
         <div className="group-encontre-nos__animated-2"></div>
         <div className="group-encontre-nos__animated-3"></div>

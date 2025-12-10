@@ -12,6 +12,8 @@ const Inicio = () => {
 
   return (
      <div className="group-header" id="inicio">
+       <img src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/decoration.webp" alt="" className="docoration_1" />
+      <img src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/decoration.webp" alt="" className="docoration_2" />
       <header className="group-header__header">
         <div className="group-header__header__header-primary" data-aos="fade-right">
           <video

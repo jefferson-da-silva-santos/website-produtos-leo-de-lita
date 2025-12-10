@@ -12,11 +12,11 @@
 /*===================(OPTION)========================*/
 
 .open {
-  animation: openModal .5s ease 0s 1 normal forwards;
+  animation: openModal 0.5s ease 0s 1 normal forwards;
 }
 
 .close {
-  animation: closeModal .5s ease 0s 1 normal forwards;
+  animation: closeModal 0.5s ease 0s 1 normal forwards;
 }
 
 .group-option {
@@ -206,6 +206,19 @@
   overflow: hidden;
   @include flexbox(flex, row, center, center, center);
 
+  .docoration_1 {
+    position: absolute;
+    max-width: 20rem;
+    left: 0;
+    bottom: 0;
+  }
+  .docoration_2 {
+    position: absolute;
+    max-width: 20rem;
+    right: 0;
+    top: 0;
+  }
+
   &__header {
     position: absolute;
     z-index: 900;
@@ -218,7 +231,7 @@
       @include flexbox(flex, column, center, center, 0);
       padding-top: 3.5em;
       position: relative;
-      
+
       transition: all 1s ease;
       width: 100%;
       max-width: 36em;
@@ -243,12 +256,14 @@
         transform: rotate(44deg);
         right: 3em;
         top: 5em;
+        animation: imagem_header_1 5s ease-in 0s infinite normal forwards;
       }
 
       .img2 {
         transform: rotate(-44deg);
         max-width: 13em;
         left: 3em;
+        animation: imagem_header_2 5s ease-in 0s infinite normal forwards;
       }
 
       .img3 {
@@ -256,6 +271,7 @@
         max-width: 10em;
         left: 3em;
         top: 16em;
+        animation: imagem_header_3 5s ease-in 0s infinite normal forwards;
       }
 
       .img4 {
@@ -263,6 +279,7 @@
         right: 4em;
         top: 13em;
         max-width: 11em;
+        animation: imagem_header_4 5s ease-in 0s infinite normal forwards;
       }
 
       &__line-1 {
@@ -273,7 +290,6 @@
         left: 0;
         top: 5%;
         border-radius: 5px;
-
       }
 
       &__img {
@@ -294,7 +310,7 @@
     &__header-secundary {
       @include flexbox(flex, column, center, baseline, 0);
       padding-left: 3.5em;
-      
+
       transition: all 1s ease;
       margin-top: 1em;
 
@@ -375,7 +391,7 @@
     &__group-primary {
       @include flexbox(flex, column, center, baseline, 0);
       padding-left: 4em;
-      
+
       transition: all 1s ease;
 
       &__suptitle {
@@ -402,7 +418,7 @@
     &__group-secundary {
       position: relative;
       @include flexbox(flex, row, center, center, 0);
-      
+
       transition: all 1s ease;
 
       img {
@@ -433,7 +449,7 @@
     &__group-primary {
       @include flexbox(flex, column, center, center, 0);
       text-align: center;
-      
+
       transition: all 1s ease;
 
       &__suptitle {
@@ -459,7 +475,7 @@
     &__group-secundary {
       @include grid-layout(grid, repeat(4, 1fr), auto, 2em, 8.5em);
       padding: 6.5em 0;
-      
+
       transition: all 1s ease;
 
       .card {
@@ -468,11 +484,11 @@
         position: relative;
         padding: 1.5em 1.3em;
         border-radius: 25px;
-        transition: all 0.3s ease;
         border: none;
         max-width: 18em;
         margin: auto;
         box-shadow: 1px 2px 20px rgb(198 198 198 / 49%);
+        transition: box-shadow 0.5s ease;
 
         &:hover {
           box-shadow: 1px 2px 20px rgba(158, 158, 158, 0.49);
@@ -551,6 +567,10 @@
             box-shadow: 0px 0px 10px rgba(168, 166, 16, 0.534);
           }
         }
+      }
+
+      .card-hover {
+        animation: mouseEnterProduct 0.5s ease-in 0s 1 normal forwards;
       }
     }
   }
@@ -734,6 +754,19 @@
   overflow: hidden;
   @include flexbox(flex, row, center, center, 0);
 
+  .docoration_1 {
+    position: absolute;
+    max-width: 20rem;
+    left: 0;
+    bottom: 0;
+  }
+  .docoration_2 {
+    position: absolute;
+    max-width: 20rem;
+    right: 0;
+    top: 0;
+  }
+
   &__econtre-nos {
     position: absolute;
     z-index: 900;
@@ -744,7 +777,6 @@
 
     &__group-primary {
       @include flexbox(flex, column, center, center, 0);
-      
       transition: all 1s ease;
 
       &__title {
@@ -769,7 +801,7 @@
       min-height: 20em;
       width: 100%;
       @include flexbox(flex, row, center, center, 2em);
-      
+
       transition: all 1s ease;
 
       .voltar {
@@ -899,7 +931,7 @@
 
     &__group-secundary {
       @include flexbox(flex, column, center, center, 1em);
-      
+
       transition: all 1s ease;
 
       img {
@@ -960,4 +992,3 @@
 }
 
 @import "media.scss";
-

@@ -63,6 +63,74 @@
   background-size: cover;
 }
 
+@keyframes imagem_header_1 {
+  0% {
+    transform: rotate(44deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(44deg);
+  }
+  75% {
+    transform: rotate(43deg);
+  }
+  100% {
+    transform: rotate(44deg);
+  }
+}
+@keyframes imagem_header_2 {
+  0% {
+    transform: rotate(-44deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-44deg);
+  }
+  75% {
+    transform: rotate(-43deg);
+  }
+  100% {
+    transform: rotate(-44deg);
+  }
+}
+@keyframes imagem_header_3 {
+  0% {
+    transform: rotate(-54deg);
+  }
+  25% {
+    transform: rotate(-55deg);
+  }
+  50% {
+    transform: rotate(-54deg);
+  }
+  75% {
+    transform: rotate(-53deg);
+  }
+  100% {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes imagem_header_4 {
+  0% {
+    transform: rotate(59deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(59deg);
+  }
+  75% {
+    transform: rotate(58deg);
+  }
+  100% {
+    transform: rotate(59deg);
+  }
+}
 @keyframes a1 {
   0% {
     opacity: 1;
@@ -228,6 +296,23 @@
   }
   100% {
     max-width: 0rem;
+  }
+}
+@keyframes mouseEnterProduct {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 .group-encontre-nos__econtre-nos__group-secundary .group-btns {
@@ -433,6 +518,18 @@
   align-items: center;
   gap: center;
 }
+.group-header .docoration_1 {
+  position: absolute;
+  max-width: 20rem;
+  left: 0;
+  bottom: 0;
+}
+.group-header .docoration_2 {
+  position: absolute;
+  max-width: 20rem;
+  right: 0;
+  top: 0;
+}
 .group-header__header {
   position: absolute;
   z-index: 900;
@@ -475,23 +572,27 @@
   transform: rotate(44deg);
   right: 3em;
   top: 5em;
+  animation: imagem_header_1 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary .img2 {
   transform: rotate(-44deg);
   max-width: 13em;
   left: 3em;
+  animation: imagem_header_2 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary .img3 {
   transform: rotate(-54deg);
   max-width: 10em;
   left: 3em;
   top: 16em;
+  animation: imagem_header_3 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary .img4 {
   transform: rotate(59deg);
   right: 4em;
   top: 13em;
   max-width: 11em;
+  animation: imagem_header_4 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary__line-1 {
   position: absolute;
@@ -678,11 +779,11 @@
   position: relative;
   padding: 1.5em 1.3em;
   border-radius: 25px;
-  transition: all 0.3s ease;
   border: none;
   max-width: 18em;
   margin: auto;
   box-shadow: 1px 2px 20px rgba(198, 198, 198, 0.49);
+  transition: box-shadow 0.5s ease;
 }
 .group-servicos__servicos__group-secundary .card:hover {
   box-shadow: 1px 2px 20px rgba(158, 158, 158, 0.49);
@@ -746,6 +847,9 @@
 .group-servicos__servicos__group-secundary .card__btn:hover {
   transform: scale(105%);
   box-shadow: 0px 0px 10px rgba(168, 166, 16, 0.534);
+}
+.group-servicos__servicos__group-secundary .card-hover {
+  animation: mouseEnterProduct 0.5s ease-in 0s 1 normal forwards;
 }
 
 /*===================(MISSÃO VISÃO E VALORES)=====================*/
@@ -930,6 +1034,18 @@
   justify-content: center;
   align-items: center;
   gap: 0;
+}
+.group-encontre-nos .docoration_1 {
+  position: absolute;
+  max-width: 20rem;
+  left: 0;
+  bottom: 0;
+}
+.group-encontre-nos .docoration_2 {
+  position: absolute;
+  max-width: 20rem;
+  right: 0;
+  top: 0;
 }
 .group-encontre-nos__econtre-nos {
   position: absolute;

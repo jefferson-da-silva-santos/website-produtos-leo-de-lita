@@ -1,3 +1,75 @@
+@keyframes imagem_header_1 {
+  0% {
+    transform: rotate(44deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(44deg);
+  }
+  75% {
+    transform: rotate(43deg);
+  }
+  100% {
+    transform: rotate(44deg);
+  }
+}
+
+@keyframes imagem_header_2 {
+  0% {
+    transform: rotate(-44deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-44deg);
+  }
+  75% {
+    transform: rotate(-43deg);
+  }
+  100% {
+    transform: rotate(-44deg);
+  }
+}
+
+@keyframes imagem_header_3 {
+  0% {
+    transform: rotate(-54deg);
+  }
+  25% {
+    transform: rotate(-55deg);
+  }
+  50% {
+    transform: rotate(-54deg);
+  }
+  75% {
+    transform: rotate(-53deg);
+  }
+  100% {
+    transform: rotate(-54deg);
+  }
+}
+
+@keyframes imagem_header_4 {
+  0% {
+    transform: rotate(59deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(59deg);
+  }
+  75% {
+    transform: rotate(58deg);
+  }
+  100% {
+    transform: rotate(59deg);
+  }
+}
+
 @keyframes a1 {
   0% {
     opacity: 1;
@@ -191,5 +263,23 @@
   }
   100% {
     max-width: 0rem;
+  }
+}
+
+@keyframes mouseEnterProduct {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
