@@ -34,6 +34,16 @@ const produtosData: Produto[] = [
     description: 'A bolacha salgada tem 300g, é de massa folhada e tem um sabor levemente amanteigado.',
   },
   {
+    id: 6,
+    imageSrc:
+      'https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Suica-Mackup.webp',
+    imageAlt: 'Bolacha Suíça',
+    title: 'Bolacha Suíça',
+    text: 'Bolacha suíça de 300g, com sabor amanteigado',
+    buttonClass: 'p7',
+    description: 'A bolacha suíça tem 300g, e com o sabor amanteigado.',
+  },
+  {
     id: 3,
     imageSrc:
       'https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Integral-Mackup.webp',
@@ -42,16 +52,6 @@ const produtosData: Produto[] = [
     text: 'Bolacha integral de 300g, com trigo integral e fibras.',
     buttonClass: 'p3',
     description: 'A bolacha integral tem 300g, feita com farinha de trigo integral e fibras que ajudam na digestão.',
-  },
-  {
-    id: 4,
-    imageSrc:
-      'https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Nazare-Mackup.webp',
-    imageAlt: 'Bolacha Nazaré',
-    title: 'Bolacha Nazaré',
-    text: 'Bolacha Nazaré 300g, sabor amido de milho.',
-    buttonClass: 'p4',
-    description: 'A bolacha nazaré tem 300g, com sabor de amido de milho.',
   },
   {
     id: 5,
@@ -64,14 +64,14 @@ const produtosData: Produto[] = [
     description: 'A bolacha praieirinha tem 300g com sabor de amido de milho e amanteigado.',
   },
   {
-    id: 6,
+    id: 4,
     imageSrc:
-      'https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Suica-Mackup.webp',
-    imageAlt: 'Bolacha Suíça',
-    title: 'Bolacha Suíça',
-    text: 'Bolacha suíça de 300g, com sabor amanteigado',
-    buttonClass: 'p7',
-    description: 'A bolacha suíça tem 300g, e com o sabor amanteigado.',
+      'https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Nazare-Mackup.webp',
+    imageAlt: 'Bolacha Nazaré',
+    title: 'Bolacha Nazaré',
+    text: 'Bolacha Nazaré 300g, sabor amido de milho.',
+    buttonClass: 'p4',
+    description: 'A bolacha nazaré tem 300g, com sabor de amido de milho.',
   },
   {
     id: 7,

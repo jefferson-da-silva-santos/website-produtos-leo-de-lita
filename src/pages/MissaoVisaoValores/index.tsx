@@ -21,12 +21,12 @@ const MVV_DATA: MissaoVisaoValoresData = {
   missao: {
     titulo: 'Missão',
     texto:
-      'Oferecer alimentos saborosos e artesanais com agilidade, profissionalismo e qualidade, levando à mesa dos nossos clientes o verdadeiro sabor da tradição.',
+      'Oferecer alimentos saborosos e artesanais com agilidade, profissionalismo, levando à mesa dos nossos clientes o verdadeiro sabor e qualidade.',
   },
   visao: {
     titulo: 'Visão',
     texto:
-      'Ser reconhecida como uma marca sólida e referência no Nordeste na produção, comercialização e distribuição de alimentos, fortalecendo laços com nossos clientes, fornecedores e colaboradores por meio de confiança, parceria e excelência.',
+      'Ser reconhecida como uma marca sólida e referência no Nordeste na produção, comercialização e distribuição de alimentos, fortalecendo laços com nossos clientes, fornecedores e colaboradores por meio de confiança, parceria e comprometimento.',
   },
   valores: {
     titulo: 'Valores',
@@ -35,7 +35,7 @@ const MVV_DATA: MissaoVisaoValoresData = {
       'Lealdade e confiança em todas as relações',
       'Transparência e comunicação com ética e respeito',
       'Compromisso com a qualidade e o sabor artesanal',
-      'Valorização de pessoas, tradições e histórias que nos inspiram a fazer o melhor todos os dias',
+      'Valorização de pessoas e histórias que nos inspiram a fazer o melhor todos os dias.',
     ],
   },
 };

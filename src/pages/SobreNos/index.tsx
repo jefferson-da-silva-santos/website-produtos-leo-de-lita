@@ -12,14 +12,8 @@ const SobreNos = () => {
               </h2>
             </div>
             <p className="group-sobre-nos__sobre-nos__group-primary__text">
-              Os Produtos Leo de Lita, liderados pelo CEO Leonardo Martins, são
-              sinônimo de sabor, qualidade e tradição. Especializados em
-              bolachas e torradas artesanais, a marca se destaca por oferecer
-              produtos que aliam o cuidado na fabricação à autenticidade em cada
-              mordida. Com ingredientes selecionados e um rigoroso controle de
-              qualidade, os Produtos Leo de Lita levam para sua mesa o melhor da
-              produção artesanal, conquistando consumidores que buscam
-              excelência e sabor e felicidade.
+              Os Produtos Leo de Lita, sob a liderança do CEO Leonardo Martins, são referência em sabor, qualidade e comprometimento.
+Especializados em produtos artesanais, a marca se destaca por oferecer cuidado em cada etapa da produção e pelo sabor presente em cada mordida. Utilizando ingredientes selecionados e seguindo um rigoroso padrão de qualidade, os Produtos Leo de Lita levam para sua mesa o melhor da produção artesanal conquistando consumidores que valorizam excelência, sabor e qualidade.
             </p>
           </div>
           <div className="group-sobre-nos__sobre-nos__group-secundary"  data-aos="fade-left">

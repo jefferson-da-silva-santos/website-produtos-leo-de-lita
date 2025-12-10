@@ -31,7 +31,7 @@
 }
 
 .group-encontre-nos__econtre-nos__group-primary__text, .group-sobre-nos__sobre-nos__group-primary__text, .group-header__header__header-secundary__text {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.1em;
   line-height: 150%;
   font-family: "Montserrat", sans-serif;
@@ -728,6 +728,7 @@
   color: #929292;
   font-size: 0.9em;
   max-width: 17em;
+  font-weight: 600;
 }
 .group-servicos__servicos__group-secundary .card__btn {
   cursor: pointer;

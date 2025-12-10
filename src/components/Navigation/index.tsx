@@ -1,9 +1,23 @@
 import { useEffect, useState } from "react";
 import useMenu from "../../hooks/useMenu";
+import { styleNavIfScrollBelowZero, styleNavIfScrollEqualsZero } from "./styles";
 
 const Navigation = () => {
+  const [styleGroupNav, setStyleGroupNav] = useState(styleNavIfScrollEqualsZero());
   const [isMobile, setIsMobile] = useState(window.innerWidth < 884);
   const { toggleMenu, isMenuOpen } = useMenu();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setStyleGroupNav(window.scrollY === 0 
+        ? styleNavIfScrollEqualsZero() 
+        : styleNavIfScrollBelowZero()
+      );
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 884);
@@ -11,10 +25,8 @@ const Navigation = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  
-
   return (
-     <div className="group-nav">
+     <div className="group-nav" style={styleGroupNav}>
       <nav className="group-nav__nav">
         <span className="logo">
           <img
