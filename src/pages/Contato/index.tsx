@@ -22,7 +22,6 @@ const FormField = ({ id, name, type = 'text', placeholder, ...props }: IFormFild
   if (type === 'textarea') {
     return (
       <>
-
         <textarea id={id} name={name} placeholder={placeholder} {...props}></textarea>
       </>
     );

@@ -1,6 +1,15 @@
+import { useEffect, useState } from 'react';
 import video from '../../assets/video/video.mp4';
 
 const Inicio = () => {
+  const [textVideo, setTextVideo] = useState('Conheça melhor nossa marca através do vídeo ao lado:');
+
+  useEffect(() => {
+    const handleResize = () => setTextVideo(window.innerWidth > 884 ? 'Conheça melhor nossa marca através do vídeo ao lado:' : 'Conheça melhor nossa marca através do vídeo abaixo:');
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
      <div className="group-header" id="inicio">
       <header className="group-header__header">
@@ -48,7 +57,7 @@ const Inicio = () => {
           <p
             className="group-header__header__header-secundary__text header-text-btn"
           >
-            Conheça melhor nossa marca através do vídeo abaixo:
+            {textVideo}
           </p>
 
        

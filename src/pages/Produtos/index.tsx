@@ -1,7 +1,7 @@
 import React from 'react';
 import useModal from '../../hooks/useModal';
 
-export interface Produto {
+export type Produto = {
   id: number;
   imageSrc: string;
   imageAlt: string;

@@ -1,17 +1,7 @@
 import type React from "react"
 import ModalContext from "../contexts/ModalContext"
 import { useState } from "react"
-
-interface Produto {
-  id: number;
-  imageSrc: string;
-  imageAlt: string;
-  title: string;
-  text: string;
-  buttonClass: string;
-  imageCardClass?: string;
-  description: string;
-}
+import type { Produto } from "../pages/Produtos";
 
 export const ModalProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
