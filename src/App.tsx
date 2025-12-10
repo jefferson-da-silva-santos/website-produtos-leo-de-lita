@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Modal from "./components/Modal";
 import Navigation from "./components/Navigation";
@@ -7,10 +8,20 @@ import Inicio from "./pages/Inicio";
 import MissaoVisaoValores from "./pages/MissaoVisaoValores";
 import Produtos from "./pages/Produtos";
 import SobreNos from "./pages/SobreNos";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "boxicons/css/boxicons.min.css";
+import ModalProvider from "./providers/ModalProvider";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
-    <>
+    <ModalProvider>
       <Modal />
       <Navigation />
       <Inicio />
@@ -22,7 +33,7 @@ function App() {
         <Contato />
       </main>
       <Footer />
-    </>
+    </ModalProvider>
   );
 }
 
