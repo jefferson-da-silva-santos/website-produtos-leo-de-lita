@@ -323,7 +323,7 @@
         margin-bottom: 22px;
         max-width: 9em;
         @extend %title;
-        font-size: 3.5em;
+        font-size: 3.8em;
 
         strong {
           color: #fff;
@@ -333,7 +333,7 @@
 
       &__text {
         font-family: $font-text;
-        color: white;
+        color: #ffffffef;
         @extend %text;
         max-width: 31rem;
         font-size: 1.3rem;
@@ -405,6 +405,7 @@
         @extend %title;
         margin-top: 15px;
         max-width: 11em;
+        margin-bottom: .5rem
       }
 
       &__text {

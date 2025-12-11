@@ -48,12 +48,11 @@ const Inicio = () => {
         </div>
         <div className="group-header__header__header-secundary"  data-aos="fade-left">
           <h1 className="group-header__header__header-secundary__title">
-            Sabor e qualidade em cada <strong>mordida</strong>.
+            Sabor e qualidade em cada <strong>mordida</strong> desde 2014.
           </h1>
 
           <p className="group-header__header__header-secundary__text">
-            Bolachas deliciosas para todos os gostos. Oferecemos uma variedade
-            irresistível de sabores, com qualidade e frescor em cada fornada.
+            Temos produtos deliciosos para todos os gostos, oferecemos uma variedade irresistível de sabor com qualidade.
           </p>
           <br />
           <p

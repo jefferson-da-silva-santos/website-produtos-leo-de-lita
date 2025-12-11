@@ -49,12 +49,12 @@ const contactFormSchema = Yup.object().shape({
     .required("A mensagem é obrigatória")
     .min(10, "A mensagem deve ter ao menos 10 caracteres"),
 });
- 
+
 // Chaves e IDs do EmailJS
-const SERVICE_ID = 'service_ykwz0ni'; 
-const TEMPLATE_ID = 'template_h37bm6s'; 
-const PUBLIC_KEY = 'LkWLwIyTgUZFuaPa1'; 
-const MY_EMAIL = "jefferson.santos.dev8051@gmail.com"; 
+const SERVICE_ID = 'service_ykwz0ni';
+const TEMPLATE_ID = 'template_h37bm6s';
+const PUBLIC_KEY = 'LkWLwIyTgUZFuaPa1';
+const MY_EMAIL = "jefferson.santos.dev8051@gmail.com";
 
 const Contato = () => {
   const [loading, setLoading] = useState(false);
@@ -81,7 +81,7 @@ const Contato = () => {
           subject: values.assunto,
           message: values.mensagem,
           to_email: MY_EMAIL,
-          time: new Date().toLocaleString("pt-BR") 
+          time: new Date().toLocaleString("pt-BR")
         },
         PUBLIC_KEY
       );
@@ -107,7 +107,7 @@ const Contato = () => {
           <h2 className="group-contato__contato__group-primary__title">
             Envie um email para nossa Distribuidora
           </h2>
-          
+
           <Formik
             initialValues={initialValues}
             validationSchema={contactFormSchema} // Use seu schema de validação aqui (ex: Yup)
@@ -136,11 +136,11 @@ const Contato = () => {
                 id="mensagem"
                 type="textarea"
               />
-              
-              <button 
-                type="submit" 
-                disabled={loading} 
-              
+
+              <button
+                type="submit"
+                disabled={loading}
+
               >
                 {!loading && "Enviar"}
                 {/* Ícone de loading (se estiver usando Boxicons) */}

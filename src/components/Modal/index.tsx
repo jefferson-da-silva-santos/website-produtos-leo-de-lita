@@ -33,8 +33,7 @@ const Modal = () => {
               className="option__section--primary__group-description__img"
             />
             <p className="option__section--primary__group-description__text-2">
-              Sabor e qualidade em cada mordida – adquira sua bolacha hoje
-              mesmo!
+              {dataModal.description_secondary}
             </p>
           </div>
         </div>

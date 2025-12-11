@@ -10,6 +10,7 @@ export type Produto = {
   buttonClass: string;
   imageCardClass?: string;
   description: string;
+  description_secondary?: string;
 };
 
 const produtosData: Produto[] = [
@@ -23,6 +24,8 @@ const produtosData: Produto[] = [
     buttonClass: "p1",
     description:
       "A bolacha doce tem 300g, é de massa folhada e tem um sabor agridoce. Ela é a queridinha da marca.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
   },
   {
     id: 2,
@@ -34,6 +37,8 @@ const produtosData: Produto[] = [
     buttonClass: "p2",
     description:
       "A bolacha salgada tem 300g, é de massa folhada e tem um sabor levemente amanteigado.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
   },
   {
     id: 6,
@@ -44,6 +49,8 @@ const produtosData: Produto[] = [
     text: "Bolacha suíça de 300g, com sabor amanteigado",
     buttonClass: "p7",
     description: "A bolacha suíça tem 300g, e com o sabor amanteigado.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
   },
   {
     id: 3,
@@ -55,6 +62,8 @@ const produtosData: Produto[] = [
     buttonClass: "p3",
     description:
       "A bolacha integral tem 300g, feita com farinha de trigo integral e fibras que ajudam na digestão.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
   },
   {
     id: 5,
@@ -66,6 +75,8 @@ const produtosData: Produto[] = [
     buttonClass: "p6",
     description:
       "A bolacha praieirinha tem 300g com sabor de amido de milho e amanteigado.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
   },
   {
     id: 4,
@@ -76,6 +87,8 @@ const produtosData: Produto[] = [
     text: "Bolacha Nazaré 300g, sabor amido de milho.",
     buttonClass: "p4",
     description: "A bolacha nazaré tem 300g, com sabor de amido de milho.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
   },
   {
     id: 7,
@@ -88,6 +101,8 @@ const produtosData: Produto[] = [
     imageCardClass: "card__img-7", // Classe específica
     description:
       "O sequilho tem 100g, com sabor de coco e massa que desmancha na boca. Contém ovos e leite de coco.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira seu sequilho hoje mesmo!'
   },
   {
     id: 8,
@@ -100,6 +115,8 @@ const produtosData: Produto[] = [
     imageCardClass: "card__img-9",
     description:
       "A torradinha de alho tem 150g, com um sabor marcante de alho. São as novidades da marca.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!'
   },
   {
     id: 9,
@@ -112,6 +129,8 @@ const produtosData: Produto[] = [
     imageCardClass: "card__img-10",
     description:
       "A torradinha de Cebola tem 150g, com um sabor marcante de Cebola. São as novidades da marca.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!'
   },
   {
     id: 10,
@@ -124,6 +143,8 @@ const produtosData: Produto[] = [
     imageCardClass: "card__img-11",
     description:
       "A torradinha de Queijo tem 150g, com um sabor marcante de Queijo . São as novidades da marca.",
+    description_secondary:
+      'Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!'
   },
 ];
 

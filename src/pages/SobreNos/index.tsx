@@ -8,7 +8,7 @@ const SobreNos = () => {
                 Sobre nós
               </span>
               <h2 className="group-sobre-nos__sobre-nos__group-primary__title">
-                Sabor, qualidade e tradição
+                Sabor, qualidade e comprometimento
               </h2>
             </div>
             <p className="group-sobre-nos__sobre-nos__group-primary__text">
