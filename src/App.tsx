@@ -13,8 +13,10 @@ import "aos/dist/aos.css";
 import "boxicons/css/boxicons.min.css";
 import ModalProvider from "./providers/ModalProvider";
 import MenuProvider from "./providers/MenuProvider";
+import useAccessLogger from "./hooks/useAccessLogger";
 
 function App() {
+  useAccessLogger('bolachas_leo_de_lita');
   useEffect(() => {
     AOS.init({
       duration: 1000,
