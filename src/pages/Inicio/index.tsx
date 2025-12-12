@@ -48,19 +48,16 @@ const Inicio = () => {
         </div>
         <div className="group-header__header__header-secundary"  data-aos="fade-left">
           <h1 className="group-header__header__header-secundary__title">
-            Sabor e qualidade em cada <strong>mordida</strong> desde 2014.
+            Sabor e qualidade em cada <strong>mordida</strong> desde <span className='year'>2014</span>. 
           </h1>
 
           <p className="group-header__header__header-secundary__text">
-            Temos produtos deliciosos para todos os gostos, oferecemos uma variedade irresistível de sabor com qualidade.
-          </p>
-          <br />
-          <p
-            className="group-header__header__header-secundary__text header-text-btn"
-          >
-            {textVideo}
+            Temos produtos deliciosos para todos os gostos, oferecemos uma variedade irresistível de sabor com qualidade. <strong>{textVideo} </strong>
           </p>
 
+          <a target="_blank" href="http://bit.ly/Faleconoscop" className="group-header__header__header-secundary__btn">
+            Fale conosco &rsaquo;
+          </a>
        
         </div>
       </header>

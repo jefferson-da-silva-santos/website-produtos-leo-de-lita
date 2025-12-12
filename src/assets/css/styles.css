@@ -620,11 +620,23 @@
 .group-header__header__header-secundary .header-text-btn {
   font-weight: bold;
 }
+.group-header__header__header-secundary .year {
+  /* 1. Defina o degradê como o fundo */
+  background-image: linear-gradient(to right, #4d9aff, #3030ff);
+  /* 2. Recorte o fundo para que apareça apenas dentro do contorno do texto */
+  -webkit-background-clip: text; /* Para compatibilidade com navegadores baseados em WebKit (Chrome, Safari, etc.) */
+  background-clip: text;
+  /* 3. Torne o texto transparente para que o fundo (o degradê) possa ser visto */
+  -webkit-text-fill-color: transparent; /* Para compatibilidade com navegadores baseados em WebKit */
+  text-fill-color: transparent; /* A propriedade padrão */
+  /* Opcionais: estilização básica para melhor visualização */
+  font-weight: bold;
+}
 .group-header__header__header-secundary__title {
   color: #fff;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   max-width: 9em;
-  font-size: 3.8em;
+  font-size: 3.7em;
 }
 .group-header__header__header-secundary__title strong {
   color: #fff;
@@ -638,12 +650,14 @@
 }
 .group-header__header__header-secundary__btn {
   cursor: pointer;
-  margin-top: 2em;
+  margin-top: 1.6em;
   padding: 0.8em 2em;
-  background-image: linear-gradient(to right, #cf9b01, #cf9b01, #faec7a);
+  background-image: linear-gradient(to right, #ffffff, #adadad, #ffffff);
   border-radius: 30px 5px 30px 5px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #1d2b59;
+  text-wrap: nowrap;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   font-size: 1.2em;
@@ -836,6 +850,7 @@
   cursor: pointer;
   padding: 0.8em 2em;
   background-image: linear-gradient(to right, #2a0fa1, #371ea8, #3001ff);
+  text-wrap: nowrap;
   border-radius: 30px 5px 30px 5px;
   border: none;
   color: rgb(255, 255, 255);
@@ -1363,7 +1378,7 @@
     row-gap: 0;
   }
   .group-header__header__header-secundary {
-    margin-top: 7em;
+    margin-top: 3em;
   }
   .group-header__header__header-primary video {
     width: 100%;
@@ -1527,6 +1542,12 @@
   }
 }
 @media (max-width: 884px) {
+  .group-header .docoration_2,
+  .group-header .docoration_1,
+  .group-encontre-nos .docoration_2,
+  .group-encontre-nos .docoration_1 {
+    max-width: 15rem;
+  }
   /*===================(NAV)=====================*/
   .group-nav__nav__list {
     position: absolute;
@@ -1637,6 +1658,9 @@
   }
   .group-header__header__header-primary img {
     visibility: hidden;
+  }
+  .group-header__header__header-primary {
+    padding-top: 2.5em;
   }
 }
 @media (max-width: 477px) {

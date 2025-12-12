@@ -318,12 +318,32 @@
         font-weight: bold;
       }
 
+      .year {
+        /* 1. Defina o degradê como o fundo */
+        background-image: linear-gradient(
+          to right,
+          #4d9aff,
+          #3030ff
+        );
+
+        /* 2. Recorte o fundo para que apareça apenas dentro do contorno do texto */
+        -webkit-background-clip: text; /* Para compatibilidade com navegadores baseados em WebKit (Chrome, Safari, etc.) */
+        background-clip: text;
+
+        /* 3. Torne o texto transparente para que o fundo (o degradê) possa ser visto */
+        -webkit-text-fill-color: transparent; /* Para compatibilidade com navegadores baseados em WebKit */
+        text-fill-color: transparent; /* A propriedade padrão */
+
+        /* Opcionais: estilização básica para melhor visualização */
+        font-weight: bold;
+      }
+
       &__title {
         color: #fff;
-        margin-bottom: 22px;
+        margin-bottom: 15px;
         max-width: 9em;
         @extend %title;
-        font-size: 3.8em;
+        font-size: 3.7em;
 
         strong {
           color: #fff;
@@ -342,12 +362,14 @@
       &__btn {
         //#faec7a //#cf9b01
         cursor: pointer;
-        margin-top: 2em;
+        margin-top: 1.6em;
         padding: 0.8em 2em;
-        background-image: linear-gradient(to right, #cf9b01, #cf9b01, #faec7a);
+        background-image: linear-gradient(to right, #ffffff, #adadad, #ffffff);
         border-radius: 30px 5px 30px 5px;
         border: none;
-        color: rgb(255, 255, 255);
+        color: #1d2b59;
+        text-wrap: nowrap;
+        font-weight: 600;
         font-family: $font-text;
         letter-spacing: 2px;
         font-size: 1.2em;
@@ -405,7 +427,7 @@
         @extend %title;
         margin-top: 15px;
         max-width: 11em;
-        margin-bottom: .5rem
+        margin-bottom: 0.5rem;
       }
 
       &__text {
@@ -554,6 +576,7 @@
             #371ea8,
             #3001ff
           );
+          text-wrap: nowrap;
           border-radius: 30px 5px 30px 5px;
           border: none;
           color: rgb(255, 255, 255);

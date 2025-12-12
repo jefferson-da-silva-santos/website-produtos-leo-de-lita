@@ -102,7 +102,7 @@ const produtosData: Produto[] = [
     description:
       "O sequilho tem 100g, com sabor de coco e massa que desmancha na boca. Contém ovos e leite de coco.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira seu sequilho hoje mesmo!'
+      'Sabor e qualidade em cada mordida – adquira seus sequilhos hoje mesmo!'
   },
   {
     id: 8,
@@ -165,7 +165,7 @@ const Produtos: React.FC = () => {
             Produtos
           </span>
           <h2 className="group-servicos__servicos__group-primary__title">
-            Aqui tem bolachas para todos os gostos,
+            Aqui temos produtps para todos os gostos,{" "}
             <strong>Confira Já</strong>
           </h2>
         </div>

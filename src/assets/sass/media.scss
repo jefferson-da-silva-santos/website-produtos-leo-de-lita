@@ -101,7 +101,7 @@
     @include grid-layout(grid, 1fr, 1fr, 0, 0);
   }
   .group-header__header__header-secundary {
-    margin-top: 7em;
+    margin-top: 3em;
   }
   .group-header__header__header-primary video {
     width: 100%;
@@ -286,6 +286,12 @@
 }
 
 @include media-query(884px) {
+  .group-header .docoration_2,
+  .group-header .docoration_1,
+  .group-encontre-nos .docoration_2,
+  .group-encontre-nos .docoration_1 {
+    max-width: 15rem;
+  }
   /*===================(NAV)=====================*/
   .group-nav__nav__list {
     position: absolute;
@@ -388,6 +394,10 @@
 
   .group-header__header__header-primary img {
     visibility: hidden;
+  }
+
+  .group-header__header__header-primary {
+    padding-top: 2.5em;
   }
 }
 
