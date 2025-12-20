@@ -6,6 +6,7 @@ export type Produto = {
   imageSrc: string;
   imageAlt: string;
   title: string;
+  text1?: string;
   text: string;
   buttonClass: string;
   imageCardClass?: string;
@@ -21,11 +22,12 @@ const produtosData: Produto[] = [
     imageAlt: "Bolacha Doce",
     title: "Bolacha Doce",
     text: "Bolacha doce de 300g, massa folhada, sabor agridoce.",
+    text1: "Crocância que derrete na boca",
     buttonClass: "p1",
     description:
       "A bolacha doce tem 300g, é de massa folhada e tem um sabor agridoce. Ela é a queridinha da marca.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!"
   },
   {
     id: 2,
@@ -34,11 +36,12 @@ const produtosData: Produto[] = [
     imageAlt: "Bolacha Salgada",
     title: "Bolacha Salgada",
     text: "Bolacha salgada de 300g, folhada, amanteigada.",
+    text1: "Receita artesanal cheia de sabor",
     buttonClass: "p2",
     description:
       "A bolacha salgada tem 300g, é de massa folhada e tem um sabor levemente amanteigado.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!"
   },
   {
     id: 6,
@@ -47,10 +50,11 @@ const produtosData: Produto[] = [
     imageAlt: "Bolacha Suíça",
     title: "Bolacha Suíça",
     text: "Bolacha suíça de 300g, com sabor amanteigado",
+    text1: "Sabor clássico com toque amanteigado",
     buttonClass: "p7",
     description: "A bolacha suíça tem 300g, e com o sabor amanteigado.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!"
   },
   {
     id: 3,
@@ -59,11 +63,12 @@ const produtosData: Produto[] = [
     imageAlt: "Bolacha Integral",
     title: "Bolacha Integral",
     text: "Bolacha integral de 300g, com trigo integral e fibras.",
+    text1: "Mais leveza e equilíbrio para o dia a dia",
     buttonClass: "p3",
     description:
       "A bolacha integral tem 300g, feita com farinha de trigo integral e fibras que ajudam na digestão.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!"
   },
   {
     id: 5,
@@ -72,11 +77,12 @@ const produtosData: Produto[] = [
     imageAlt: "Bolacha Praeirinha",
     title: "Bolacha Praeirinha",
     text: "Bolacha de 300g, amido de milho e amanteigada.",
+    text1: "Sabor caseiro que conquista gerações",
     buttonClass: "p6",
     description:
       "A bolacha praieirinha tem 300g com sabor de amido de milho e amanteigado.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!"
   },
   {
     id: 4,
@@ -85,10 +91,11 @@ const produtosData: Produto[] = [
     imageAlt: "Bolacha Nazaré",
     title: "Bolacha Nazaré",
     text: "Bolacha Nazaré 300g, sabor amido de milho.",
+    text1: "Tradição e simplicidade em cada mordida",
     buttonClass: "p4",
     description: "A bolacha nazaré tem 300g, com sabor de amido de milho.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua bolacha hoje mesmo!"
   },
   {
     id: 7,
@@ -97,12 +104,13 @@ const produtosData: Produto[] = [
     imageAlt: "Sequilhos",
     title: "Sequilhos",
     text: "Sequilhos de 100g, sabor coco, massa leve.",
+    text1: "Desmancha na boca de tão leve",
     buttonClass: "p8",
-    imageCardClass: "card__img-7", // Classe específica
+    imageCardClass: "card__img-7",
     description:
       "O sequilho tem 100g, com sabor de coco e massa que desmancha na boca. Contém ovos e leite de coco.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira seus sequilhos hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira seus sequilhos hoje mesmo!"
   },
   {
     id: 8,
@@ -111,12 +119,13 @@ const produtosData: Produto[] = [
     imageAlt: "Torradinhas de Alho",
     title: "Torradinhas de Alho",
     text: "Torrada de 150g, sabor alho. (Novidade da marca)",
+    text1: "Perfeita para acompanhar qualquer momento",
     buttonClass: "p9",
     imageCardClass: "card__img-9",
     description:
       "A torradinha de alho tem 150g, com um sabor marcante de alho. São as novidades da marca.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!"
   },
   {
     id: 9,
@@ -125,12 +134,13 @@ const produtosData: Produto[] = [
     imageAlt: "Torradinhas de Cebola",
     title: "Torradinhas de Cebola",
     text: "Torrada de 150g, sabor Cebola. (Novidade da marca)",
+    text1: "Crocância e sabor que surpreendem",
     buttonClass: "p10",
     imageCardClass: "card__img-10",
     description:
       "A torradinha de Cebola tem 150g, com um sabor marcante de Cebola. São as novidades da marca.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!'
+      "Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!"
   },
   {
     id: 10,
@@ -139,14 +149,16 @@ const produtosData: Produto[] = [
     imageAlt: "Torradinhas de Queijo",
     title: "Torradinhas de Queijo",
     text: "Torrada de 150g, sabor Queijo. (Novidade da marca)",
+    text1: "Sabor intenso para quem ama queijo",
     buttonClass: "p11",
     imageCardClass: "card__img-11",
     description:
       "A torradinha de Queijo tem 150g, com um sabor marcante de Queijo . São as novidades da marca.",
     description_secondary:
-      'Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!'
-  },
+      "Sabor e qualidade em cada mordida – adquira sua torradinha hoje mesmo!"
+  }
 ];
+
 
 // 3. Componente React (Functional Component) com Tipagem
 const Produtos: React.FC = () => {
@@ -165,7 +177,7 @@ const Produtos: React.FC = () => {
             Produtos
           </span>
           <h2 className="group-servicos__servicos__group-primary__title">
-            Aqui temos produtps para todos os gostos,{" "}
+            Aqui temos produtos para todos os gostos,{" "}
             <strong>Confira Já</strong>
           </h2>
         </div>
@@ -189,7 +201,7 @@ const Produtos: React.FC = () => {
                 />
               </div>
               <span className="card__title">{produto.title}</span>
-              <p className="card__text">{produto.text}</p>
+              <p className="card__text">{produto.text1}</p>
               <button
                 className={`card__btn ${produto.buttonClass}`}
                 onClick={() => {
