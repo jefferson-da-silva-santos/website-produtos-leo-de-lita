@@ -572,12 +572,14 @@
   transform: rotate(44deg);
   right: 3em;
   top: 5em;
+  z-index: -1;
   animation: imagem_header_1 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary .img2 {
   transform: rotate(-44deg);
   max-width: 13em;
   left: 3em;
+  z-index: -2;
   animation: imagem_header_2 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary .img3 {
@@ -585,6 +587,7 @@
   max-width: 10em;
   left: 3em;
   top: 16em;
+  z-index: -1;
   animation: imagem_header_3 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary .img4 {
@@ -592,6 +595,7 @@
   right: 4em;
   top: 13em;
   max-width: 11em;
+  z-index: -1;
   animation: imagem_header_4 5s ease-in 0s infinite normal forwards;
 }
 .group-header__header__header-primary__line-1 {
