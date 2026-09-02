@@ -29,10 +29,7 @@ const Navigation = () => {
      <div className="group-nav" style={styleGroupNav}>
       <nav className="group-nav__nav">
         <span className="logo">
-          <img
-            src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/chef-hat.webp"
-            alt=""
-          />
+          <img src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/logo-media.webp" alt="" />
           Leo de Lita
         </span>
         <ul className={`group-nav__nav__list`} style={isMobile ? { display: isMenuOpen ? "flex" : "none" } : { display: "flex" }}>

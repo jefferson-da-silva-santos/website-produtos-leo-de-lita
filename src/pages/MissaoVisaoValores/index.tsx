@@ -31,10 +31,10 @@ const MVV_DATA: MissaoVisaoValoresData = {
   valores: {
     titulo: 'Valores',
     lista: [
-      'Fé em Deus e na força do trabalho',
-      'Lealdade e confiança em todas as relações',
-      'Transparência e comunicação com ética e respeito',
-      'Compromisso com a qualidade e o sabor artesanal',
+      'Fé em Deus e na força do trabalho.',
+      'Lealdade e confiança em todas as relações.',
+      'Transparência e comunicação com ética e respeito.',
+      'Compromisso com a qualidade e o sabor artesanal.',
       'Valorização de pessoas e histórias que nos inspiram a fazer o melhor todos os dias.',
     ],
   },
@@ -97,28 +97,6 @@ const MissaoVisaoValores: React.FC = () => {
               className="img"
             />
           </div>
-
-          {/* Imagens Animadas (Mantido conforme original) */}
-          <img
-            src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Torrada-Queijo-Mackup.webp"
-            alt=""
-            className="animedImg"
-          />
-          <img
-            src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Torrada-Queijo-Mackup.webp"
-            alt=""
-            className="animedImg2"
-          />
-          <img
-            src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Salgada-Mackup.webp"
-            alt=""
-            className="animedImg3"
-          />
-          <img
-            src="https://raw.githubusercontent.com/jefferson-da-silva-santos/imagens-projetos/refs/heads/main/BolachasLeoDeLita/webp/Leo-de-Lita-Bolacha-Salgada-Mackup.webp"
-            alt=""
-            className="animedImg4"
-          />
         </div>
       </section>
     </div>

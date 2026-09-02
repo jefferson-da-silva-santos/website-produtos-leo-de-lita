@@ -122,10 +122,13 @@
       color: white;
       font-weight: bolder;
       font-size: 1.3em;
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
       img {
-        width: 25px;
-        margin-right: 5px;
+        width: 50px;
+        margin-right: 10px;
       }
 
       i {
@@ -711,6 +714,7 @@
         @include flexbox(flex, column, flex-start, center, 1em);
         padding: 0 1.3rem 0 1.3rem;
         border-right: 4px solid #471dff;
+        text-align: center;
 
         &__title {
           font-size: 2rem;
@@ -719,7 +723,7 @@
         }
 
         &__list {
-          list-style: inside;
+          list-style-type: none;
 
           .item {
             font-size: 1.2rem;
