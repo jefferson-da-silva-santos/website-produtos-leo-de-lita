@@ -14,6 +14,7 @@ import "boxicons/css/boxicons.min.css";
 import ModalProvider from "./providers/ModalProvider";
 import MenuProvider from "./providers/MenuProvider";
 import useAccessLogger from "./hooks/useAccessLogger";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   useAccessLogger('bolachas_leo_de_lita');
@@ -28,6 +29,7 @@ function App() {
       <MenuProvider>
         <Modal />
         <Navigation />
+        <WhatsAppButton />
         <Inicio />
         <main>
           <SobreNos />

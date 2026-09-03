@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .group-contato__contato__group-primary__suptitle, .group-servicos__servicos__group-primary__suptitle, .group-sobre-nos__sobre-nos__group-primary__suptitle {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -857,7 +861,7 @@
 .group-servicos__servicos__group-secundary .card__btn {
   cursor: pointer;
   padding: 0.8em 2em;
-  background-image: linear-gradient(to right, #2a0fa1, #371ea8, #3001ff);
+  background-color: #2E0099;
   text-wrap: nowrap;
   border-radius: 30px 5px 30px 5px;
   border: none;
@@ -898,7 +902,7 @@
 }
 .group-missao__missao .card-missao {
   position: relative;
-  background-image: linear-gradient(to left, #2c11a2, #3003f8);
+  background-color: #2E0099;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1.2fr 1.1fr;
@@ -949,7 +953,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
-  border-right: 4px solid #471dff;
+  border-right: 4px solid #2e13a5;
 }
 .group-missao__missao .card-missao--primary__title {
   font-size: 2rem;
@@ -969,7 +973,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
-  border-right: 4px solid #471dff;
+  border-right: 4px solid #2e13a5;
 }
 .group-missao__missao .card-missao--secondary__title {
   font-size: 2rem;
@@ -987,7 +991,7 @@
   align-items: center;
   gap: 1em;
   padding: 0 1.3rem 0 1.3rem;
-  border-right: 4px solid #471dff;
+  border-right: 4px solid #2e13a5;
   text-align: center;
 }
 .group-missao__missao .card-missao--tertiary__title {
@@ -1550,7 +1554,7 @@
     font-size: 1em;
   }
 }
-@media (max-width: 884px) {
+@media (max-width: 979px) {
   .group-header .docoration_2,
   .group-header .docoration_1,
   .group-encontre-nos .docoration_2,
@@ -1807,6 +1811,23 @@
   .group-missao {
     min-height: 90rem;
   }
+}
+.fale-conosco {
+  background-image: linear-gradient(to right, #ffffff, #adadad, #ffffff);
+  border-radius: 20px;
+  padding: 10px 16px;
+  color: rgb(1, 2, 65);
+  font-weight: 600;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1em;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.fale-conosco:hover {
+  transform: scale(105%);
+  box-shadow: 0px 0px 10px rgba(168, 166, 16, 0.534);
 }
 
 /*# sourceMappingURL=styles.css.map */

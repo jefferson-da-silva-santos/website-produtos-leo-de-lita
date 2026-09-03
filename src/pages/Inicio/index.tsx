@@ -5,7 +5,7 @@ const Inicio = () => {
   const [textVideo, setTextVideo] = useState('Conheça melhor nossa marca através do vídeo ao lado:');
 
   useEffect(() => {
-    const handleResize = () => setTextVideo(window.innerWidth > 884 ? 'Conheça melhor nossa marca através do vídeo ao lado:' : 'Conheça melhor nossa marca através do vídeo abaixo:');
+    const handleResize = () => setTextVideo(window.innerWidth > 979 ? 'Conheça melhor nossa marca através do vídeo ao lado:' : 'Conheça melhor nossa marca através do vídeo abaixo:');
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -48,16 +48,14 @@ const Inicio = () => {
         </div>
         <div className="group-header__header__header-secundary"  data-aos="fade-left">
           <h1 className="group-header__header__header-secundary__title">
-            Sabor e qualidade em cada <strong>mordida</strong> desde <span className='year'>2014</span>. 
+            Sabor e qualidade em cada <strong>mordida</strong> desde 2014. 
           </h1>
 
           <p className="group-header__header__header-secundary__text">
             Temos produtos deliciosos para todos os gostos, oferecemos uma variedade irresistível de sabor com qualidade. <strong>{textVideo} </strong>
           </p>
 
-          <a target="_blank" href="http://bit.ly/Faleconoscop" className="group-header__header__header-secundary__btn">
-            Fale conosco &rsaquo;
-          </a>
+          <a href="#servicos" className="group-header__header__header-secundary__btn" > Nossos produtos <i className='bx bx-chevron-down'></i> </a>
        
         </div>
       </header>

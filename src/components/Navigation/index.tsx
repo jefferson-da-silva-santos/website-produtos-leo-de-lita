@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 import useMenu from "../../hooks/useMenu";
 import { styleNavIfScrollBelowZero, styleNavIfScrollEqualsZero } from "./styles";
+import { phone } from "../WhatsAppButton";
 
 const Navigation = () => {
   const [styleGroupNav, setStyleGroupNav] = useState(styleNavIfScrollEqualsZero());
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 884);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 979);
   const { toggleMenu, isMenuOpen } = useMenu();
+  const handleClick = () => {
+    window.open(
+      `https://wa.me/${phone}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +28,7 @@ const Navigation = () => {
   }, []);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 884);
+    const handleResize = () => setIsMobile(window.innerWidth < 979);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -58,6 +66,11 @@ const Navigation = () => {
           <li className="group-nav__nav__list__item">
             <a href="#contato" className="group-nav__nav__list__item__item contato"
               >contato</a
+            >
+          </li>
+          <li className="group-nav__nav__list__item">
+            <button onClick={handleClick} className="fale-conosco"
+            >Fale conosco</button
             >
           </li>
         </ul>
