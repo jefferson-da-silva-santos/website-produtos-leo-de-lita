@@ -1,3 +1,19 @@
+/**
+ * SEO — Palavras-chave (Keyword Research) — Produtos Léo de Lita
+ *
+ * Principal (foco): bolachas artesanais em Jaboatão dos Guararapes
+ *
+ * Secundárias: comprar bolacha artesanal | bolacha artesanal preço |
+ * bolacha artesanal perto de mim | bolacha doce artesanal | bolacha salgada artesanal
+ *
+ * Cauda longa: "onde comprar bolacha artesanal em Jaboatão dos Guararapes" |
+ * "qual a melhor bolacha artesanal da região" |
+ * "quanto custa bolacha artesanal por kg" |
+ * "bolacha artesanal para revenda" |
+ * "loja de bolacha artesanal perto de mim"
+ *
+ * Usar naturalmente nos H1/H2 e textos das seções, sem keyword stuffing.
+ */
 import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Modal from "./components/Modal";
