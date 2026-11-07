@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
-      DEPLOY_DIR: domains/bolachasleodelita.com.br/public_html
+      DEPLOY_DIR: domains/produtosleodelita.com.br/public_html
 
     steps:
       - uses: actions/checkout@v7
